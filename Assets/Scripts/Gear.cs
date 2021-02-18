@@ -47,6 +47,7 @@ public class Gear : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 		Reset();
 		m_canvasGroup.blocksRaycasts = false;
 		m_transform.SetParent(m_canvas.transform);
+		m_transform.position = eventData.position;
 	}
 
 	public void OnDrag(PointerEventData eventData)
