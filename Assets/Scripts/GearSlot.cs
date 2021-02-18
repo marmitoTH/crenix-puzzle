@@ -9,8 +9,11 @@ public class GearSlot : MonoBehaviour
 		set
 		{
 			m_gear = value;
+			OnChange(m_gear);
 		}
 	}
 
 	public bool inUse => m_gear;
+
+	protected virtual void OnChange(Gear gear) { }
 }
