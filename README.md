@@ -9,7 +9,7 @@
 ## 🔍 About
 
 <p align='center'>
-    <img src='https://user-images.githubusercontent.com/25598040/108426796-f8928480-721a-11eb-8e1c-5ba9a4979bb8.png'>
+    <img src='https://user-images.githubusercontent.com/25598040/108427541-18767800-721c-11eb-9384-8dc4ea90cb40.png'>
 </p>
 
 Crenix Puzzle is a 2D game developed in Unity as a skill test for Crenix studio. In the game the player is able to drag around gears from the inventory and place it on the available slots. The player is also able to reset gears position by tapping the "reset" button. When all the slots are occupied, the upper gears must rotate clockwise and the lower gears anticlockwise. During the gameplay, Nugget must interact with the player.
