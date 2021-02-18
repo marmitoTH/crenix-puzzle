@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31951771fb0a2d846ac98cbc016ca9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gearInUse: {fileID: 21300000, guid: ead0d870d63bc834cbe29a4515b391a6, type: 3}
+  connectedSprite: {fileID: 21300000, guid: ead0d870d63bc834cbe29a4515b391a6, type: 3}
 --- !u!222 &264751986402844543
 CanvasRenderer:
   m_ObjectHideFlags: 0

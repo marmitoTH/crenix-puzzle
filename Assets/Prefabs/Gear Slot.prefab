@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2486611335408264441}
   - component: {fileID: 2486611335408264442}
+  - component: {fileID: 5626334579957879990}
   - component: {fileID: 2486611335408264443}
   - component: {fileID: 2486611335408264440}
   m_Layer: 5
-  m_Name: Gear Slot 0
+  m_Name: Gear Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,9 +48,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 2486611335408264438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daab673f5d4bfe94e8630249276f66c9, type: 3}
+  m_Script: {fileID: 11500000, guid: e8fa9524fac7088478aa766874a7eaf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anticlockwise: 0
+  rotationDegreesPerSecond: 90
+--- !u!114 &5626334579957879990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2486611335408264438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ca76c242144e84ba402cae3e0691f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onGameCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2486611335408264442}
+        m_MethodName: StartRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onGameNotCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2486611335408264442}
+        m_MethodName: StopRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2486611335408264443
 CanvasRenderer:
   m_ObjectHideFlags: 0
