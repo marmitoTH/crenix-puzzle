@@ -10,7 +10,7 @@ public class Gear : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 	private RectTransform m_transform;
 	private CanvasGroup m_canvasGroup;
 	private Transform m_initialParent;
-	private GearSlot m_slot;
+	private Slot m_slot;
 	private Image m_image;
 	private Sprite m_defaultSprite;
 
@@ -59,7 +59,7 @@ public class Gear : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 	{
 		var target = eventData.pointerCurrentRaycast.gameObject;
 
-		if (target && target.TryGetComponent<GearSlot>(out var slot) && !slot.inUse)
+		if (target && target.TryGetComponent<Slot>(out var slot) && !slot.inUse)
 		{
 			m_slot = slot;
 			m_slot.gear = this;

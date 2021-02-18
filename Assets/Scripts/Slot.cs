@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GearSlot : MonoBehaviour
+public abstract class Slot : MonoBehaviour
 {
 	private Gear m_gear;
 
@@ -15,5 +15,5 @@ public class GearSlot : MonoBehaviour
 
 	public bool inUse => m_gear;
 
-	protected virtual void OnChange(Gear gear) { }
+	protected abstract void OnChange(Gear gear);
 }
